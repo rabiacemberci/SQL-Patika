@@ -3,7 +3,7 @@ SELECT title, description FROM film;
 
 2.Question:
 SELECT title, description FROM film
- WHERE length >60 AND length <75;  
+WHERE length >60 AND length <75;  
  
 3.Question:
 SELECT * FROM film 
