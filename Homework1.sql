@@ -17,7 +17,7 @@ AND replacement_cost = '12.99'
 OR replacement_cost = '28.99';  
 
 4.Question:
---customer tablosunda bulunan first_name sütunundaki değeri 
+--Customer tablosunda bulunan first_name sütunundaki değeri 
 --'Mary' olan müşterinin last_name sütunundaki değeri nedir?
 SELECT first_name, last_name FROM customer 
 WHERE first_name = 'Mary';  
@@ -25,7 +25,7 @@ WHERE first_name = 'Mary';
 ----  'Smith'
 
 5.Question:
---film tablosundaki uzunluğu(length) 50 ten büyük OLMAYIP aynı zamanda rental_rate değeri 2.99 veya
+--Film tablosundaki uzunluğu(length) 50 ten büyük OLMAYIP aynı zamanda rental_rate değeri 2.99 veya
 --4.99 OLMAYAN verileri sıralayınız.
 SELECT * FROM film
 WHERE NOT length >50 
