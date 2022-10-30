@@ -1,7 +1,7 @@
 1.Question:
 --Actor ve customer tablolarında bulunan first_name sütunları için tüm verileri sıralayalım. 
 (SELECT first_name FROM actor)
-UNION ALL
+UNION 
 (SELECT first_name FROM customer);
 
 2.Question:
@@ -20,8 +20,14 @@ EXCEPT
 4.Question:
 --İlk 3 sorguyu tekrar eden veriler için de yapalım.
 (SELECT first_name FROM actor)
-UNION
+UNION ALL
 (SELECT first_name FROM customer);
 
+(SELECT first_name FROM actor)
+INTERSECT ALL
+(SELECT first_name FROM customer);
 
+(SELECT first_name FROM actor)
+EXCEPT ALL
+(SELECT first_name FROM customer);
 
